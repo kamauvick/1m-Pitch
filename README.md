@@ -64,6 +64,12 @@ After extracting the files,
 | Password  | Account password, ``eg parseword``|
 | Confirm Password  | Account password, ``eg parseword``|
 
+> Pitches inputs
+
+| Inputs | Description  |
+|---|---|
+|  Heading | Pitch description eg; ``pickup lines``  |
+|  Pitch text| The actual pitch body|
 
 
 
