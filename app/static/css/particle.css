@@ -1,16 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #230e4a, black);
-    /* background-image: url('/images/bg.jpg'); */
+    background-color: #341677;
+    background_image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img(20).jpg");
 }
 
 #particles-js {
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.overlay {
-    background-color: rgba(0, 0, 0, 0.5)
-    height:inherit;
+background_repeat: no-repeat;
+background_size: cover;
 }
