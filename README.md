@@ -24,13 +24,16 @@ After extracting the files,
 1. Navigate to the project folder
 >`` cd gitSearch.`` 
 
-2. Activating the virtual environment
+2. Creating a virtual environment
 >``virtualenv virtual.``
 
- 3. Running the application
+3. Activating the virtual environment
+>``source virtual/bin/activate.``
+
+4. Running the application
 >``python3 manage.py server``
 
-4. Running tests
+5. Running tests
 
  > ``command.``
 
