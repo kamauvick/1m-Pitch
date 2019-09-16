@@ -6,7 +6,7 @@
 > Victor Waichigo K.
 
 ## Screenshots
-<img src="../static/assets/shot.png" width="1000">
+<img src="https://github.com/kamauvick/1m-Pitch/blob/master/app/static/assets/shot.png?raw=true" width="1000">
 
 ## Installations
 
