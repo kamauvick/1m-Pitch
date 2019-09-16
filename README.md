@@ -6,7 +6,7 @@
 > Victor Waichigo K.
 
 ## Screenshots
-<img src="src/assets/shot.png" width="1000">
+<img src="../static/assets/shot.png" width="1000">
 
 ## Installations
 
