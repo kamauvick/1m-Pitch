@@ -16,7 +16,7 @@ particlesJS('particles-js',
   {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 20,
       "density": {
         "enable": true,
         "value_area": 800
@@ -41,11 +41,11 @@ particlesJS('particles-js',
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.4,
       "random": false,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 0.81,
         "opacity_min": 0.1,
         "sync": false
       }
@@ -55,7 +55,7 @@ particlesJS('particles-js',
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 40,
+        "speed": 30,
         "size_min": 0.1,
         "sync": false
       }
@@ -76,7 +76,7 @@ particlesJS('particles-js',
       "out_mode": "out",
       "bounce": false,
       "attract": {
-        "enable": false,
+        "enable": true,
         "rotateX": 600,
         "rotateY": 1200
       }
@@ -86,11 +86,11 @@ particlesJS('particles-js',
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -123,7 +123,7 @@ particlesJS('particles-js',
   },
         "retina_detect": true,
         "config_demo": {
-            "hide_card": false,
+            "hide_card": true,
             "background_color": "#b61924",
             "background_image": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img(20).jpg",
             "background_position": "50% 50%",

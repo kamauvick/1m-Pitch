@@ -3,6 +3,7 @@ from flask_login import login_user, logout_user
 
 from app.auth import auth
 from app.models import User
+from ..email import email_message
 
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -52,10 +53,10 @@ def signup():
             if user is not None:
                 error = 'A user with that email already exists'
                 return render_template('signup.html', error=error)
-
             user = User(username=username, email=email)
             user.set_password(password)
             user.save()
+            email_message("Welcome to 1m Pitch", "email/howdy", user.email, user=user)
             return redirect(url_for('auth.login'))
 
     return render_template('signup.html')
