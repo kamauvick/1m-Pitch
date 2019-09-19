@@ -3,7 +3,7 @@ from flask_login import login_required, current_user
 
 from . import main
 from .forms import PostForm, CommentForm, UpdateProfile
-from ..models import Post, Comment, User, Upvote
+from ..models import Post, Comment, User, Upvote, Downvote
 
 
 @main.route('/')
@@ -95,10 +95,10 @@ def upvote(id):
     return redirect(url_for('main.posts'))
 
 
-# @main.route('/dislike/<int:id>', methods=['GET', ['POST']])
-# @login_required
-# def downvote(id):
-#     post = Post.query.get(id)
-#     vote_mpya = Upvote(post=post, downvote=1)
-#     vote_mpya.save()
-#     return redirect(url_for('main.posts'))
+@main.route('/dislike/<int:id>', methods=['GET', 'POST'])
+@login_required
+def downvote(id):
+    post = Post.query.get(id)
+    vm = Downvote(post=post, downvote=1)
+    vm.save()
+    return redirect(url_for('main.posts'))

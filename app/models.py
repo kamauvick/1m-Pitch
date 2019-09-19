@@ -130,7 +130,7 @@ class Downvote(db.Model):
         downvote_post.save()
 
     @classmethod
-    def querry_downvotes(cls, id):
+    def query_downvotes(cls, id):
         downvote = Downvote.query.filter_by(post_id=id).all()
         return downvote
 
