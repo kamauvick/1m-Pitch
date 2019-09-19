@@ -20,7 +20,8 @@ def index():
 def posts():
     posts = Post.query.all()
     likes = Upvote.query.all()
-    return render_template('pitch_display.html', posts=posts, likes=likes, current_user = user)
+    user = current_user
+    return render_template('pitch_display.html', posts=posts, likes=likes, user=user)
 
 
 @main.route('/new_post', methods=['GET', 'POST'])
@@ -61,9 +62,10 @@ def comment(post_id):
     return render_template('comment.html', form=form, post=post, comments=comments, user=user)
 
 
-@main.route('/user/<username>')
+@main.route('/user')
 @login_required
-def user(username):
+def user():
+    username = current_user.username
     user = User.query.filter_by(username=username).first()
     if user is None:
         return ('not found')
